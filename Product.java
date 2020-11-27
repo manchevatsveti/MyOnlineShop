@@ -1,17 +1,15 @@
 package myonlineshop;
 
-public class Product {
-   
+public abstract class Product {
+    
     private double regularPrice;
-   
+    
     /** Creates a new instance of Product */
     public Product(double regularPrice) {
         this.regularPrice = regularPrice;
     }
-   
-    public double computeSalePrice(){
-        return 0;
-    }
+    
+    public abstract double computeSalePrice();
 
     public double getRegularPrice() {
         return regularPrice;
@@ -20,5 +18,5 @@ public class Product {
     public void setRegularPrice(double regularPrice) {
         this.regularPrice = regularPrice;
     }
-   
+    
 }

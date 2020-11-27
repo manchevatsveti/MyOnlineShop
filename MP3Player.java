@@ -3,17 +3,13 @@ package myonlineshop;
 public class MP3Player extends Electronics{
    
     private String color;
-   
-    /**
-     * Creates a new instance of MP3Player
-     */
+  
     public MP3Player(double regularPrice,
                 String manufacturer,
                 String color) {
         super(regularPrice, manufacturer);
         this.color = color;
     }
-   
    
     public double computeSalePrice(){
         return super.getRegularPrice() * 0.9;
